@@ -1,0 +1,8 @@
+abcd
+
+10 acbd
+
+11 abc
+12 abcd
+13 abcde
+14 abcg
