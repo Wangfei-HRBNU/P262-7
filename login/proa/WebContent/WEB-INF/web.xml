@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>proa</display-name>
+  
+  <!-- 配置AddServlet 找到方法所在的类 -->
+  <servlet>
+  	<servlet-name>addServlet</servlet-name>
+  	<servlet-class>com.servlet.AddServlet</servlet-class>
+  </servlet>
+ 
+  <!-- 映射AddServlet 前端是根据xxx.do找到后端方法的 -->
+  <servlet-mapping>
+  	<servlet-name>addServlet</servlet-name>
+  	<url-pattern>/add.do</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 配置loginServlet 找到方法所在的类 -->
+  <servlet>
+  	<servlet-name>loginServlet</servlet-name>
+  	<servlet-class>com.servlet.LoginServlet</servlet-class>
+  </servlet>
+ 
+  <!-- 映射loginServlet 前端是根据xxx.do找到后端方法的 -->
+  <servlet-mapping>
+  	<servlet-name>loginServlet</servlet-name>
+  	<url-pattern>/login.do</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 配置updateServlet 找到方法所在的类 -->
+  <servlet>
+  	<servlet-name>updateServlet</servlet-name>
+  	<servlet-class>com.servlet.updateServlet</servlet-class>
+  </servlet>
+ 
+  <!-- 映射updateServlet 前端是根据xxx.do找到后端方法的 -->
+  <servlet-mapping>
+  	<servlet-name>updateServlet</servlet-name>
+  	<url-pattern>/update.do</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
